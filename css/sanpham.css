@@ -1,0 +1,34 @@
+#img-sp img {
+	width: 100%;
+}
+
+#sp form {
+	width: 100%;
+}
+
+#sp img {
+	width: 100%;
+	border: 1px solid #aaa;
+	padding-right: 0px;
+}
+
+#sp p {
+	color: green;
+}
+
+#sp img {
+	margin-bottom: 15px;
+}
+
+#nvg-btn {
+	padding-top: 50px;
+	width: 35px;
+}
+
+.d-flex {
+	justify-content: flex-start;
+}
+
+#nvg-btn span {
+	color: blue;
+}

@@ -1,0 +1,339 @@
+@font-face {
+	font-family:open-sans;
+	src:url('../font/OpenSans-Semibold.ttf') format('truetype');
+	font-weight:normal;
+	font-style:normal;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: open-sans;
+	font-size: 14px;
+}
+
+ul {
+	list-style-type: none;
+	display: flex;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+#gt-top{
+	width: 100%;
+	height: 32px;
+	background-color:#f5f5f5;
+}
+
+#gt-top ul {
+	display: flex;
+
+	/*ustify-content căn chỉnh nội dung của thẻ dựa trên main axis( cột ngang)*/
+	justify-content: flex-end;
+
+	/*align-items căn chỉnh nội dung của thẻ dựa trên cross axis( cột dọc)*/
+	align-items: center;
+}
+
+#gt-top ul li {
+	border-right: 1px solid #d8d8d8;
+}
+
+#gt-top ul li a {
+	margin: 0;
+	padding: 10px;
+}
+
+#gt-top img {
+	padding-right: 5px;
+}
+
+header {
+	width: 100%;
+	padding: 10px;
+}
+
+header .item {
+	display: flex;
+}
+
+header .search, .gioithieu {
+	margin-top: 42px; 
+} 
+
+.search button {
+	height: 96%;
+	padding:0 auto; 
+}
+
+.search img {
+	justify-content: flex-start;
+}
+
+header img {
+	padding-left: 20px;
+}
+
+.gioithieu {
+	justify-content: flex-end;
+}
+
+.gioithieu img {
+	padding-right:10px; 
+	height: 30px;
+}
+
+header p {
+/*	font-size: 12px;*/
+	align-items: center;
+}
+
+.tool-bar {
+	height: 40px;
+	background-color: #45ad0e;
+}
+
+#noidungcard {
+/*	font-size: 13px;*/
+	background-color: #f4f4f4;
+	padding: 0;
+}
+
+.card {
+	border-radius: none;
+	border:none;
+}
+
+#noidungcard td{
+	justify-content: center;
+	padding-left: 20px;
+}
+
+#noidungcard img {
+	padding: 0 10px;
+	width: 35px;
+}
+
+#hang1 {
+	height: 40px;
+	background-color: #ff3f00;
+	justify-content: flex-start;
+	padding-left:0;
+}
+
+#hang1 a {
+	color: white;
+}
+
+#hang1 img {
+	padding-right: 10px;
+	justify-content: flex-start;
+}
+
+
+form {
+	border:1px solid #d8d8d8;
+	padding: 10px;
+}
+
+form hr:first-of-type {
+	background-color: #45ad0e;
+	height: 1.5px;
+}
+
+.tin-tuc {
+	display: flex;
+/*	font-size: 14px;*/
+}
+
+.tin-tuc .list-top-tree-thumb {
+	padding-right: 5px;
+}
+
+.tin-tuc .list-top-tree-thumb img{
+	border:2px solid #d8d8d8;
+}
+
+.slide-bar ul{
+	display: flex;
+	align-items: center;
+}
+
+.slide-bar li:fourth-of-type {
+	width: 200px;
+}
+
+.slide-bar li a {
+	justify-content: center;
+}
+
+.slide-bar a {
+	display: inline;
+}
+
+nav ul li{
+	width: 100%;
+	height: 100%;
+}
+
+nav li a{
+	color: white;
+	display: flex;
+	align-items: center;
+
+}
+
+nav a:hover {
+	text-decoration: none;
+}
+
+#link-gt {
+	margin-top: 0px; 
+}
+
+#carouselExampleIndicators {
+	margin-top: 15px;
+}
+
+.card-body {
+	padding: 0;
+}
+
+#right-slide div{
+	padding-top: 10px;
+}
+
+
+#btn-show button:first-of-type {
+	background-color: #46ad0e;
+}
+
+#btn-show span {
+	color: white;
+	padding-right: 50px;
+}
+
+#btn-show img {
+	padding-right: 5px;
+	justify-content: flex-end;
+}
+
+#collapseExample {
+	padding-top: 10px;
+}
+
+#gt-bottom {
+	padding-top: 40px;
+	background-image: url("../vt-cat/footer-bg.png");
+}
+
+#gt-bottom{
+	width: 100%;
+	height: 32px;
+	background-color:#f5f5f5;
+}
+
+#gt-bottom ul {
+	list-style-type: none;
+	display: flex;
+
+	/*ustify-content căn chỉnh nội dung của thẻ dựa trên main axis( cột ngang)*/
+	justify-content: flex-end;
+
+	/*align-items căn chỉnh nội dung của thẻ dựa trên cross axis( cột dọc)*/
+	align-items: center;
+}
+
+#gt-bottom ul li {
+	border-right: 1px solid #d8d8d8;
+}
+
+#gt-bottom ul li a {
+	margin: 0;
+	padding: 10px;
+}
+
+
+footer {
+	background-image: url("../vt-cat/footer-bg.png");
+	margin-top:30px; 
+}
+
+#footer-top {
+	background:rgba(22, 111, 44, 0.5);
+}
+
+#top-footer{
+	width: 100%;
+	height: 32px;
+}
+
+#top-footer-left nav {
+	width: 500px;
+}
+
+#top-footer-left {
+	align-items: center;
+}
+
+#top-footer-left li {
+	padding: 2px;
+}
+
+#top-footer-left li a {
+
+	/*ustify-content căn chỉnh nội dung của thẻ dựa trên main axis( cột ngang)*/
+	justify-content: center;
+	border-right: 1px;
+}
+
+#top-footer-left {
+	align-items: center;
+}
+
+#top-footer-right ul {
+	display: flex;
+
+	/*ustify-content căn chỉnh nội dung của thẻ dựa trên main axis( cột ngang)*/
+	justify-content: flex-end;
+}
+
+#top-footer-right li {
+	border-right: 1px solid white;	
+	padding: 2px;
+}
+
+#top-footer-right a {
+	justify-content: center;
+	padding: 10px;
+}
+
+#top-footer-right span {
+	color: white;
+	padding-right: 10px;
+}
+
+
+#ft {
+	padding: 50px 0px 90px 0px;
+	color: white;
+}
+
+#ft h5 {
+	font-size: 20px;
+}
+
+#ft ul {
+	display: inline;
+}
+
+#ft img {
+	padding-right: 10px;
+}
+
+#ft li {
+	padding: 5px;
+	font-size: 10px;
+}

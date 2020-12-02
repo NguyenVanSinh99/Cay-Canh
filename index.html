@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <!-- meta-viewport //scan nội dung đúng kích thước của thiết bị -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sản phẩm</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" type="text/css" href="./bootstrap-4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/index.css">
+  <link rel="stylesheet" type="text/css" href="./css/sanpham.css">
+</head>
+<body>
+
+  <!-- Top of page -->
+  <section id="gt-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <ul>
+            <li>
+              <a href="tel:0123.456.789"><img src="./vt-cat/phone.png" alt="Phone">Hotline:<b>0123.456.789</b></a>
+            </li>
+            <li>
+              <a href="facebook.com/pham.tan.1650"><img src="./vt-cat/fb.png" alt="Facebook"></a>
+            </li>
+            <li>
+              <a href="#"><img src="./vt-cat/twitter.png" alt="Twitter"></a>
+            </li>
+            <li>
+              <a href="#"><img src="./vt-cat/gplus.png" alt="Google Plus"></a>
+            </li>
+            <li>
+              <a href="#"><img src="./vt-cat/youtube.png" alt="Youtube"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-12">
+          <img src="./vt-cat/logo.png" alt="logo">
+        </div>
+
+        <div class="col-md-3 col-12 search">
+          <div class="input-group input-group-sm">
+              <input type="text" class="form-control" placeholder="Tìm kiếm">
+
+            <div class="input-group-append">
+                <button class="btn btn-secondary" type="button"><img src="./vt-cat/search.png" alt="Search"></button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-12 gioithieu">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="item" name="camket">
+                <img src="./vt-cat/hand.png" alt="Cam kết chất lượng">
+                <p>CAM KẾT CHẤT LƯỢNG SẢN PHẨM DỊCH VỤ</p>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="item" name="vantai">
+                <img src="./vt-cat/xt.png">
+                <p>VẬN CHUYỂN NỘI THÀNH MIỄN PHÍ</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <!-- Menu bar -->
+  <div class="tool-bar">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-header btn"  data-toggle="collapse" data-target="#noidungcard" id="hang1">
+                <img src="./vt-cat/gachngang.png">
+                      <a href="#">DANH MỤC SẢN PHẨM</a>
+            </div>    
+          </div>
+        </div>
+
+        <div class="col-md-9 slide-bar">
+          <nav >
+            <ul>
+              <li>
+                <a href="#">TRANG CHỦ</a>
+              </li>
+              <li>
+                <a href="#">GIỚI THIỆU</a>
+              </li>
+              <li>
+                <a href="#">SẢN PHẨM</a>
+              </li>
+              <li>
+                <a href="#">DỊCH VỤ</a>
+              </li>
+              <li>
+                <a href="#">HỖ TRỢ KHÁCH HÀNG</a>
+              </li>
+              <li>
+                <a href="#">TIN TỨC</a>
+              </li>
+              <li>
+                <a href="#">LIÊN HỆ</a>
+              </li>
+            </ul>
+          </nav>        
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Slide -->
+  <div class="container">
+    <div class="row">
+      <!-- Left of slide -->
+      <div class="col-md-3" id="left-slide">
+        <!-- Nội dung hiện lên khi click vào "DANH MỤC SẢN PHẨM" -->
+        <table class="table card-body "  data-toggle="collapse"  aria-expanded="false" id="noidungcard">
+          <tr>
+            <td>
+              <img src="./vt-cat/leaf.png">
+              <a href="#">Cây trang trí trong nhà</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src="./vt-cat/leaf.png">
+              <a href="#">Cây trang trí sân vườn</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src="./vt-cat/leaf.png">
+              <a href="#">Cây phong thủy</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src="./vt-cat/leaf.png">
+              <a href="#">Cây cổ thụ</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src="./vt-cat/leaf.png">
+              <a href="#">Cây bóng mát</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src="./vt-cat/leaf.png">
+              <a href="#">Dịch vụ vật tư</a>
+            </td>
+          </tr>
+        </table>
+        
+        <br>
+        
+        <!-- Fieldset tin tức -->
+        <div id="news">
+          <form>
+            <fieldset>
+              <b>TIN NỔI BẬT</b>
+
+              <hr>
+
+              <div class="tin-tuc">
+                <div class="list-top-tree-thumb">
+                  <img src="./vt-cat/tin01.png">
+                </div>
+
+                <div class="list-top-tree-info">
+                  <span>Cây Kim Ngân hợp với tuổi nào ?</span>
+                  <br>
+                  <span><img src="./vt-cat/clock.png">
+                  28/6/2020</span>
+                </div>
+              </div>
+
+              <hr style="border-style: dotted;">
+
+              <div class="tin-tuc">
+                <div class="list-top-tree-thumb">
+                  <img src="./vt-cat/tin02.png">
+                </div>
+
+                <div class="list-top-tree-info">
+                  <span>Cây Kim Ngân hợp với tuổi nào ?</span>
+                  <br>
+                  <span><img src="./vt-cat/clock.png">
+                  28/6/2020</span>
+                </div>
+              </div>
+
+              <hr style="border-style: dotted;">
+
+              <div class="tin-tuc">
+                <div class="list-top-tree-thumb">
+                  <img src="./vt-cat/tin03.png">
+                </div>
+
+                <div class="list-top-tree-info">
+                  <span>Cây Kim Ngân hợp với tuổi nào ?</span>
+                  <br>
+                  <span><img src="./vt-cat/clock.png">
+                  28/6/2020</span>
+                </div>
+              </div>
+
+              <hr style="border-style: dotted;">
+
+              <div class="tin-tuc">
+                <div class="list-top-tree-thumb">
+                  <img src="./vt-cat/tin04.png">
+                </div>
+
+                <div class="list-top-tree-info">
+                  <span>Cây Kim Ngân hợp với tuổi nào ?</span>
+                  <br>
+                  <span><img src="./vt-cat/clock.png">
+                  28/6/2020</span>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+
+      <!-- Right of slide -->
+      <div class="col-md-9" id="right-slide">
+        <div id="link-gt">
+          <a href="index.html">Trang chủ</a>
+          <img src="./vt-cat/arrow-sm.png">
+          <a href="#">Sản phẩm</a>
+          <img src="./vt-cat/arrow-sm.png">
+          <a href="sanpham.html">Cây trang trí trong nhà</a>
+        </div>
+
+        <div id="img-sp">
+          <img src="./vt-cat/banner.png">
+        </div>
+
+        <div id="btn-show">
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <button class="btn" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                <img src="./vt-cat/icon-h.png">
+                <span>Sản phẩm</span>
+                <img src="./vt-cat/arrow.png">
+            </button>
+          </div>
+
+          <div id="collapseExample" style="">
+            <div class="card card-body">
+              <div class="row" id="sp"> 
+                  <!-- Nội dung ngoài ở đây -->
+                  <div class="col-md-3" id="">
+                    <form>
+                      <center>
+                        <img src="./vt-cat/sp1.png">
+                        <br>
+                        <b>Cây sen đất đá trắng</b>
+                        <br>
+                        <p>1.810.000đ</p>
+                      </center>
+                    </form>
+                  </div>
+                  <div class="col-md-3">
+                    <form>
+                      <center>
+                        <img src="./vt-cat/sp2.png">
+                        <br>
+                        <b>Sedum hoa hồng</b>
+                        <br>
+                        <p>1.810.000đ</p>
+                      </center>
+                    </form>
+                  </div>
+                  <div class="col-md-3">
+                    <form>
+                      <center>
+                        <img src="./vt-cat/sp3.png">
+                        <br>
+                        <b>Sen đá 3 màu</b>
+                        <br>
+                        <p>1.810.000đ</p>
+                      </center>
+                    </form>
+                  </div>
+                  <div class="col-md-3">
+                    <form>
+                      <center>
+                        <img src="./vt-cat/sp4.png">
+                        <br>
+                        <b>Sen đá bông hồng đen</b>
+                        <br>
+                        <p>1.810.000đ</p>
+                      </center>
+                    </form>
+                  </div>
+                </div>
+                
+                <div class="row" id="sp"> 
+                  <!-- Nội dung ngoài ở đây -->
+                  <div class="col-md-3" id="">
+                    <form>
+                      <center>
+                        <img src="./vt-cat/sp1.png">
+                        <br>
+                        <b>Cây sen đất đá trắng</b>
+                        <br>
+                        <p>1.810.000đ</p>
+                      </center>
+                    </form>
+                  </div>
+                  <div class="col-md-3">
+                    <form>
+                      <center>
+                        <img src="./vt-cat/sp2.png">
+                        <br>
+                        <b>Sedum hoa hồng</b>
+                        <br>
+                        <p>1.810.000đ</p>
+                      </center>
+                    </form>
+                  </div>
+                  <div class="col-md-3">
+                    <form>
+                      <center>
+                        <img src="./vt-cat/sp3.png">
+                        <br>
+                        <b>Sen đá 3 màu</b>
+                        <br>
+                        <p>1.810.000đ</p>
+                      </center>
+                    </form>
+                  </div>
+                  <div class="col-md-3">
+                    <form>
+                      <center>
+                        <img src="./vt-cat/sp4.png">
+                        <br>
+                        <b>Sen đá bông hồng đen</b>
+                        <br>
+                        <p>1.810.000đ</p>
+                      </center>
+                    </form>
+                  </div>
+                </div>
+
+                <div class="row" id="sp"> 
+                  <!-- Nội dung ngoài ở đây -->
+                  <div class="col-md-3" id="">
+                    <form>
+                      <center>
+                        <img src="./vt-cat/sp1.png">
+                        <br>
+                        <b>Cây sen đất đá trắng</b>
+                        <br>
+                        <p>1.810.000đ</p>
+                      </center>
+                    </form>
+                  </div>
+                  <div class="col-md-3">
+                    <form>
+                      <center>
+                        <img src="./vt-cat/sp2.png">
+                        <br>
+                        <b>Sedum hoa hồng</b>
+                        <br>
+                        <p>1.810.000đ</p>
+                      </center>
+                    </form>
+                  </div>
+                  <div class="col-md-3">
+                    <form>
+                      <center>
+                        <img src="./vt-cat/sp3.png">
+                        <br>
+                        <b>Sen đá 3 màu</b>
+                        <br>
+                        <p>1.810.000đ</p>
+                      </center>
+                    </form>
+                  </div>
+                  <div class="col-md-3">
+                    <form>
+                      <center>
+                        <img src="./vt-cat/sp4.png">
+                        <br>
+                        <b>Sen đá bông hồng đen</b>
+                        <br>
+                        <p>1.810.000đ</p>
+                      </center>
+                    </form>
+                  </div>
+                </div>
+
+                <div class="row" id="sp"> 
+                  <!-- Nội dung ngoài ở đây -->
+                  <div class="col-md-3" id="">
+                    <form>
+                      <center>
+                        <img src="./vt-cat/sp1.png">
+                        <br>
+                        <b>Cây sen đất đá trắng</b>
+                        <br>
+                        <p>1.810.000đ</p>
+                      </center>
+                    </form>
+                  </div>
+                  <div class="col-md-3">
+                    <form>
+                      <center>
+                        <img src="./vt-cat/sp2.png">
+                        <br>
+                        <b>Sedum hoa hồng</b>
+                        <br>
+                        <p>1.810.000đ</p>
+                      </center>
+                    </form>
+                  </div>
+                  <div class="col-md-3">
+                    <form>
+                      <center>
+                        <img src="./vt-cat/sp3.png">
+                        <br>
+                        <b>Sen đá 3 màu</b>
+                        <br>
+                        <p>1.810.000đ</p>
+                      </center>
+                    </form>
+                  </div>
+                  <div class="col-md-3">
+                    <form>
+                      <center>
+                        <img src="./vt-cat/sp4.png">
+                        <br>
+                        <b>Sen đá bông hồng đen</b>
+                        <br>
+                        <p>1.810.000đ</p>
+                      </center>
+                    </form>
+                  </div>
+                </div>
+
+                <div class="row" id="sp"> 
+                  <!-- Nội dung ngoài ở đây -->
+                  <div class="col-md-3" id="">
+                    <form>
+                      <center>
+                        <img src="./vt-cat/sp1.png">
+                        <br>
+                        <b>Cây sen đất đá trắng</b>
+                        <br>
+                        <p>1.810.000đ</p>
+                      </center>
+                    </form>
+                  </div>
+                  <div class="col-md-3">
+                    <form>
+                      <center>
+                        <img src="./vt-cat/sp2.png">
+                        <br>
+                        <b>Sedum hoa hồng</b>
+                        <br>
+                        <p>1.810.000đ</p>
+                      </center>
+                    </form>
+                  </div>
+                  <div class="col-md-3">
+                    <form>
+                      <center>
+                        <img src="./vt-cat/sp3.png">
+                        <br>
+                        <b>Sen đá 3 màu</b>
+                        <br>
+                        <p>1.810.000đ</p>
+                      </center>
+                    </form>
+                  </div>
+                  <div class="col-md-3">
+                    <form>
+                      <center>
+                        <img src="./vt-cat/sp4.png">
+                        <br>
+                        <b>Sen đá bông hồng đen</b>
+                        <br>
+                        <p>1.810.000đ</p>
+                      </center>
+                    </form>
+                  </div>
+                </div>
+
+                <div class="d-flex"> 
+                  <nav aria-label="Page navigation example" id="nvg-btn">
+                    <ul class="pagination">
+                      <li class="page-item">
+                        <a class="page-link" href="#!" aria-label="Previous">
+                          <span aria-hidden="true">«</span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#!">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#!">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#!">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#!" aria-label="Next">
+                          <span aria-hidden="true">»</span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <footer>
+    <div id="footer-top">
+      <div class="container">
+        <!-- Top footer -->
+        <div class="row" id="top-footer">
+          
+          <section class="col-md-4" id="top-footer-right">
+            <div class="row">
+              <div class="col-12" style="margin-left: 750px;">
+                <ul>
+                  <li>
+                    <span>Kết nối với chúng tôi:</span>
+                  </li>
+                  <li>
+                    <a href="facebook.com/pham.tan.1650"><img src="./vt-cat/fb-footer.png" alt="Facebook"></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="./vt-cat/twitter-footer.png" alt="Twitter"></a>
+                  </li>
+                  <li>
+                    <a href="mailto:minhtan98.vn@gmail.com"><img src="./vt-cat/gplus-footer.png" alt="Google Plus"></a>
+                  </li>
+                  <li>
+                    <a href="youtube.com"><img src="./vt-cat/youtube-footer.png" alt="Youtube"></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="row" id="ft">
+        <div class="col-md-6" style="padding-left: 100px;">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.237941074831!2d105.87419001429703!3d20.983097094712946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135aea00c96b6c1%3A0x8e95712f0f470a2c!2zMjE4IEzEqW5oIE5hbSwgVsSpbmggSMawbmcsIEhhaSBCw6AgVHLGsG5nLCBIw6AgTuG7mWksIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1606880051041!5m2!1svi!2s" width="400" height="150" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+
+        <div class="col-md-6" style="padding-left:90px; ">
+          <h5>NHÀ VƯỜN UNETI</h5>
+          <ul>
+            <li><img src="./vt-cat/address.png">Địa chỉ: 218,Lĩnh Nam ,Hoàng Mai, Hà Nội</li>
+            <li><img src="./vt-cat/phone-footer.png">Hotine: 036 798 488 (Mr.Sinh) </li>
+            <li><img src="./vt-cat/mail-footer.png">Email: nguyensinh111199@gmai.com</li>
+            <li><img src="./vt-cat/web.png">Website: UNETI.COM </li>
+            <li><img src="./vt-cat/copy.png">Copyright © 2013. Bản quyền thuộc về Nhà Vườn UNETI.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer> 
+</body>
+</html>   
